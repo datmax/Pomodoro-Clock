@@ -21,8 +21,6 @@ $(document).ready(function(){
     var button = $("button");
     
 
-
-
     intervalUpdate = () =>{
         if(!paused){
         newTime = convertInSeconds();
@@ -76,7 +74,14 @@ $(document).ready(function(){
             var seconds = timeToUpdate % 60 >= 10 ? timeToUpdate % 60 : '0'+ timeToUpdate % 60;
             time.text(minutes + ':' + seconds);
             $("title").text(minutes + ':' + seconds);
+            if(timeToUpdate === 0){
+                time.addClass("blink");
+            }
+            else if(timeToUpdate !== 0){
+                time.removeClass("blink");
+            }
         }
+
         
 
     }
