@@ -1,7 +1,72 @@
- body{
-     background-color: #3ebbc1;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab'); 
+body{
+     background-color: #e6f3ff;
+     font-family: 'Roboto Slab', serif;
+     font-weight: normal;
  }
 
 .app{
-    max-width: 980px;
+    border-radius: 5px;
+    max-width: 900px;
+    margin:0px auto 0px auto;
+    background-color: white;
+    position: relative;
+
+}
+
+.app-title{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 2px solid #e6f3ff;
+}
+
+.clock-heading > h3{
+    text-align: center;
+}
+
+.clock-body, .setter{
+    text-align: center;
+}
+
+.setter > button{
+    margin-top: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+button{
+    margin: 0px 2px auto 2px;
+    cursor: pointer;
+    border-radius: 20%;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid #99ddff;
+    outline: none;
+}
+
+button:hover{
+    background-color: #99ddff;
+}
+
+button:active{
+    background-color: #4d88ff;
+    border-color: #4d88ff;
+}
+
+.funcs{
+    margin-bottom: 20px;
+}
+
+
+footer{
+    text-align: center;
+    background-color: white;
+    border-top: 5px solid #e6f3ff;
+    border-radius: 5px;
+    padding-bottom:5px;
+}
+
+h5{
+    margin-bottom: 10px;
+    text-decoration-style: none;
 }
